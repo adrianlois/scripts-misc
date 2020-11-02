@@ -1,2 +1,2 @@
 # scripts-varios
-Scripts varios - Windows: PowerShell, batch - Linux: bash - MacOS: bash
+Scripts - Windows: PowerShell, batch - Linux: bash - MacOS: bash
