@@ -3,7 +3,7 @@
 function NoLock {
 	Write-Host "..."
 	for (;;) {
-		[void] [System.Reflection.Assembly]::LoadWithPartialName("'System.Windows.Forms")
+		[void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
 		[System.Windows.Forms.SendKeys]::SendWait("^")
 		Start-Sleep 180
 	}
