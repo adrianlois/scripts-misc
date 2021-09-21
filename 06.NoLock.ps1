@@ -8,3 +8,9 @@ function NoLock {
 		Start-Sleep 180
 	}
 }
+
+<#
+SHIFT = +
+CTRL = ^
+ALT = %
+#>
