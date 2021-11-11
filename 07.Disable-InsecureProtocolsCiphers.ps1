@@ -50,7 +50,7 @@ New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders
 Write-Host ' RC4 has been disabled ' -Background DarkGreen
 
 <#
-	Disabling additional cipher suites:
-	Disable certain specific ciphers by removing them from HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Cryptography\Configuration\Local\SSL\00010002
-	For a full list of supported Cipher suites see Cipher Suites in TLS/SSL (Schannel SSP) https://docs.microsoft.com/en-us/windows/win32/secauthn/cipher-suites-in-schannel
+    Disabling additional cipher suites:
+    Disable certain specific ciphers by removing them from HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Cryptography\Configuration\Local\SSL\00010002
+    For a full list of supported Cipher suites see Cipher Suites in TLS/SSL (Schannel SSP) https://docs.microsoft.com/en-us/windows/win32/secauthn/cipher-suites-in-schannel
 #>
