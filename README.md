@@ -3,7 +3,7 @@ Scripts - Windows: PowerShell, batch - Linux: bash - MacOS: bash
 
 ## Perfiles Windows PowerShell
 | Tipo de perfil | Ruta de acceso al perfil |
-| --- | :--- |
+| :--- | :--- |
 | Usuario actual | $PROFILE.CurrentUserCurrentHost o $PROFILE |
 | Todos los usuarios | $PROFILE.AllUsersCurrentHost |
 | Usuario actual, todos los hosts | $PROFILE.CurrentUserAllHosts |
