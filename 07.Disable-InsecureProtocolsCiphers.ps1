@@ -1,5 +1,5 @@
 <#
-    .Description
+    .DESCRIPTION
     This PowerShell script will disable insecure SSL/TLS Protocols and Cipher.
     https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs
 #>
