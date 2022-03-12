@@ -1,4 +1,7 @@
-# Prevents computer lockup by simulating Ctrl key presses every 3 minutes
+<#
+    .DESCRIPTION
+	Prevents computer lockup by simulating Ctrl key presses every 3 minutes.
+#>
 
 function NoLock {
 	Write-Host "..."
