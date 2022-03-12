@@ -7,7 +7,7 @@
 function top {
 	while (1) { 
 		Get-Process | Sort -Descending cpu | Select-Object -First 40; Start-Sleep -Seconds 2; Clear-Host; 
-		Write-Host "Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName"; 
-		Write-Host "-------  ------    -----      ----- -----   ------     -- -----------"
+		Write-Host "Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName"; 
+		Write-Host "-------  ------    -----      -----     ------     --  -- -----------"
 	}
 }
