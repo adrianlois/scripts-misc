@@ -11,18 +11,18 @@ Install-Module -Name 7zip4PowerShell -Verbose
 
 function Compress-7Zip-Encryption {
     param (
-	[Parameter(Mandatory=$True)]
-	[string]$PathKdbx,
-	[Parameter(Mandatory=$True)]
-	[string]$File7zKdbx,
-	[Parameter(Mandatory=$True)]
-	[string]$PathKeyx,
-	[Parameter(Mandatory=$True)]
-	[string]$File7zKeyx,
-	[Parameter(Mandatory=$True)]
-	[string]$PathBak7z,
-	[Parameter(Mandatory=$True)]
-	[string]$DestinationBak7z
+        [Parameter(Mandatory=$True)]
+        [string]$PathKdbx,
+        [Parameter(Mandatory=$True)]
+        [string]$File7zKdbx,
+        [Parameter(Mandatory=$True)]
+        [string]$PathKeyx,
+        [Parameter(Mandatory=$True)]
+        [string]$File7zKeyx,
+        [Parameter(Mandatory=$True)]
+        [string]$PathBak7z,
+        [Parameter(Mandatory=$True)]
+        [string]$DestinationBak7z
 	)
 
 	$Passwd7zKdbx = Get-Content -Path "C:\PATH\Passwd7zKdbx" | ConvertTo-SecureString
@@ -38,5 +38,5 @@ function Compress-7Zip-Encryption {
 }
 
 Compress-7Zip-Encryption -PathKdbx "C:\PATH\db.kdbx" -File7zKdbx "C:\PATH\Temp\BakdbKdbx.7z" `
-			 -PathKeyx "C:\PATH\dbkey.keyx" -File7zKeyx "C:\PATH\Temp\BakdbKeyx.7z" `
-			 -PathBak7z "C:\PATH\Backup.7z" -DestinationBak7z "C:\PATH\Backup"
+            -PathKeyx "C:\PATH\dbkey.keyx" -File7zKeyx "C:\PATH\Temp\BakdbKeyx.7z" `
+            -PathBak7z "C:\PATH\Backup.7z" -DestinationBak7z "C:\PATH\Backup"
