@@ -11,18 +11,18 @@ Install-Module -Name 7zip4PowerShell -Verbose
 
 function Compress-7Zip-Encryption {
     param (
-		[Parameter(Mandatory=$True)]
-		[string]$PathKdbx,
-		[Parameter(Mandatory=$True)]
-		[string]$File7zKdbx,
-		[Parameter(Mandatory=$True)]
-		[string]$PathKeyx,
-		[Parameter(Mandatory=$True)]
-		[string]$File7zKeyx,
-		[Parameter(Mandatory=$True)]
-		[string]$PathBak7z,
-		[Parameter(Mandatory=$True)]
-		[string]$DestinationBak7z
+	[Parameter(Mandatory=$True)]
+	[string]$PathKdbx,
+	[Parameter(Mandatory=$True)]
+	[string]$File7zKdbx,
+	[Parameter(Mandatory=$True)]
+	[string]$PathKeyx,
+	[Parameter(Mandatory=$True)]
+	[string]$File7zKeyx,
+	[Parameter(Mandatory=$True)]
+	[string]$PathBak7z,
+	[Parameter(Mandatory=$True)]
+	[string]$DestinationBak7z
 	)
 
 	$Passwd7zKdbx = Get-Content -Path "C:\PATH\Passwd7zKdbx" | ConvertTo-SecureString
