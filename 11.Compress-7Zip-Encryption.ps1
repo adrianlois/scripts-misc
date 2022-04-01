@@ -38,5 +38,5 @@ function Compress-7Zip-Encryption {
 }
 
 Compress-7Zip-Encryption -PathKdbx "C:\PATH\db.kdbx" -File7zKdbx "C:\PATH\Temp\BakdbKdbx.7z" `
-             -PathKeyx "C:\PATH\dbkey.keyx" -File7zKeyx "C:\PATH\Temp\BakdbKeyx.7z" `
-             -PathBak7z "C:\PATH\Backup.7z" -DestinationBak7z "C:\PATH\Backup"
+                         -PathKeyx "C:\PATH\dbkey.keyx" -File7zKeyx "C:\PATH\Temp\BakdbKeyx.7z" `
+                         -PathBak7z "C:\PATH\Backup.7z" -DestinationBak7z "C:\PATH\Backup"
