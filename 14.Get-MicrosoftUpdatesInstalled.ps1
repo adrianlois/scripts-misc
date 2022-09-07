@@ -1,5 +1,8 @@
-# Get-HotFix | Sort-Object HotFixID | Format-Table –AutoSize. This only shows Windows Updates, not all Microsoft Updates for example Microsoft Application Updates, Drivers, etc.
-# With this script get a list of all Microsoft Updates. Shows all Microsoft Updates, not just Windows Updates like Get-HotFix
+<#
+    .DESCRIPTION
+    Get-HotFix | Sort-Object HotFixID | Format-Table –AutoSize. This only shows Windows Updates, not all Microsoft Updates for example Microsoft Application Updates, Drivers, etc.
+    With this script get a list of all Microsoft Updates. Shows all Microsoft Updates, not just Windows Updates like Get-HotFix
+#>
 
 function Get-MSUpdates {
 
