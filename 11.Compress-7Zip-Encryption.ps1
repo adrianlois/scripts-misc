@@ -1,12 +1,12 @@
 <# 
-.DESCRIPTION
-1. Install module 7zip4PowerShell
-Install-Module -Name 7zip4PowerShell -Verbose
+    .DESCRIPTION
+    1. Install module 7zip4PowerShell
+    Install-Module -Name 7zip4PowerShell -Verbose
 
-2. Create a file with the encrypted password
-"MyPassword" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString | Out-File "C:\PATH\Passwd7zKdbx"
-"MyPassword" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString | Out-File "C:\PATH\Passwd7zKeyx"
-"MyPassword" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString | Out-File "C:\PATH\PasswdBak7z"
+    2. Create a file with the encrypted password
+    "MyPassword" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString | Out-File "C:\PATH\Passwd7zKdbx"
+    "MyPassword" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString | Out-File "C:\PATH\Passwd7zKeyx"
+    "MyPassword" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString | Out-File "C:\PATH\PasswdBak7z"
 #>
 
 function Compress-7Zip-Encryption {
