@@ -22,6 +22,6 @@ function Get-MSUpdates {
         $OutputCollection += $output
     }
 
-    Write-Host `n"$($OutputCollection.Count) Updates Found" -ForegroundColor Yellow
+    Write-Host `n"[+] $($OutputCollection.Count) Updates Found" -ForegroundColor Yellow
     $OutputCollection | Sort-Object HotFixID | Format-Table -AutoSize
 }
