@@ -1,5 +1,5 @@
 # scripts-misc
-Scripts - Windows: PowerShell, batch - Linux: bash - MacOS: bash
+Scripts varios - PowerShell, batch, bash
 
 ## Perfiles Windows PowerShell
 | Tipo de perfil | Ruta de acceso al perfil |
