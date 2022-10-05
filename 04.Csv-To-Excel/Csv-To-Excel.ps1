@@ -13,7 +13,7 @@ Function Csv-To-Excel {
 
     ForEach ($CsvFile in $CsvFiles) {
 
-		$WorkSheetname = $CsvFile.Substring(0,$CsvFile.Length -4)
+	$WorkSheetname = $CsvFile.Substring(0,$CsvFile.Length -4)
 
         Import-Csv -Path "$CsvPath\$CsvFile" | Export-Excel -Path "$XlsxFile" -WorkSheetname "$WorkSheetname" `
         -NoNumberConversion IPv4Address	-AutoSize -BoldTopRow -AutoFilter -ConditionalText $(
