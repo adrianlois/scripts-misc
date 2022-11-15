@@ -1,8 +1,4 @@
 ﻿<!DOCTYPE html>
-<!-- 
-Autor: @adrianlois 
-Obtención de dirección IP pública y privada en PHP
--->
 <html>
     <head>
     <meta charset="utf-8">
