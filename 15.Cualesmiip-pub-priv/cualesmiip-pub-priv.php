@@ -48,7 +48,6 @@ Obtención de dirección IP pública y privada en PHP
 			}
 		</style>
     </head>
-	
     <body>
 		<div id="clic" align="center">
 			<div id="titulo">¿Cuál es mi IP?</div>
