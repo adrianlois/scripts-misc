@@ -1,4 +1,4 @@
-## Uses for Invoke-Expression en Invoke-WebRequest, Invoke-RestMethod and WebClient
+## Uses for Invoke-Expression en Invoke-WebRequest, Invoke-RestMethod and WebClient and BitsTransfer
 
 ### Powershell Versions
 ```ps
@@ -33,4 +33,26 @@ Invoke-WebRequest -Uri 'http://10.0.0.1/sysinfo.txt' -UseBasicParsing | Select-O
 ```
 ```ps
 IEX (Invoke-WebRequest -Uri 'http://10.0.0.1/sysinfo.txt' -UseBasicParsing).Content
+```
+
+### Another path for downloading files using BitsTransfer
+
+Invoke-WebRequest
+```ps
+Invoke-WebRequest -Uri 'https://domain.com/myfile.ps1' -OutFile "C:\temp\myfile.ps1"
+```
+
+BitsTransfer synchronously
+```ps
+Start-BitsTransfer 'https://domain.com/myfile.ps1' -Destination "C:\temp\myfile.ps1"
+```
+
+BitsTransfer asynchronously
+```ps
+Start-BitsTransfer 'https://domain.com/myfile.ps1' -Destination "C:\temp\myfile.ps1" -Asynchronous
+```
+
+This adds a new job to the Bits background transfer service, this is persistent even if the PowerShell session is closed. In order to view the queued jobs we use *Get-BitsTransfer* and to complete the job and download the *Complete-BitsTransfer* file.
+```ps
+Get-BitsTransfer -Name "TestJob1" | Complete-BitsTransfer
 ```
