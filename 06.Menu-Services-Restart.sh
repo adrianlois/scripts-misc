@@ -1,4 +1,5 @@
 #!/bin/bash
+# Manager services restart Menu: vsftpd, apache2 and smbd
 clear
 while :
 do
@@ -80,7 +81,7 @@ systemctl stop smbd.service
 ;;
 11) echo Salir...
 exit 1;;
-*) echo "$opc no es una opcion válida.";
+*) echo "$opc no es una opcion vï¿½lida.";
 echo "Presiona una tecla para continuar...";
 read foo;;
 esac
