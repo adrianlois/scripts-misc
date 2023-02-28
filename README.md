@@ -1,12 +1,12 @@
 # scripts-misc
-Scripts varios - PowerShell, batch, bash
+Misc Scrtips - PowerShell, batch, bash
 
-## Perfiles Windows PowerShell
-| Tipo de perfil | Ruta de acceso al perfil |
+## Profiles Windows PowerShell
+| Profile Type | Profile Path |
 | --- | --- |
-| Usuario actual | $PROFILE.CurrentUserCurrentHost o $PROFILE |
-| Todos los usuarios | $PROFILE.AllUsersCurrentHost |
-| Usuario actual, todos los hosts | $PROFILE.CurrentUserAllHosts |
-| Todos los usuarios, todos los hosts | $PROFILE.AllUsersAllHosts |
+| Current user | $PROFILE.CurrentUserCurrentHost o $PROFILE |
+| All users | $PROFILE.AllUsersCurrentHost |
+| Current user, all hosts | $PROFILE.CurrentUserAllHosts |
+| All users, all hosts | $PROFILE.AllUsersAllHosts |
 
-https://docs.microsoft.com/es-es/powershell/scripting/windows-powershell/ise/how-to-use-profiles-in-windows-powershell-ise?view=powershell-7.2
+https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/how-to-use-profiles-in-windows-powershell-ise?view=powershell-7.3#selecting-a-profile-to-use-in-the-windows-powershell-ise
