@@ -1,0 +1,1 @@
+Get-ADDomainController -Filter * | Select-Object HostName, IPv4Address, Enabled
