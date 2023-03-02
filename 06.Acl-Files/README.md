@@ -1,8 +1,8 @@
 ## Get ACL for Files and Folders
 ```ps
-Get-Acl -Path "\\shared\test" | Select-Object -Expand Access | ft IdentityReference, FileSystemRights, AccessControlType
+Get-Acl -Path "\\shared\test" | Select-Object -Expand Access | Format-Table IdentityReference,FileSystemRights,AccessControlType
 ```
-Other path
+Other path:
 ```ps
 (Get-Acl -Path "\\shared\test").Access | Select-Object IdentityReference,FileSystemRights,AccessControlType
 ```
