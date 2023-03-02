@@ -93,7 +93,7 @@ $acl | Set-Acl -Path \\shared\test
 |                   | Delete                         |                               |
 |                   | Read Permissions               |                               |
 
-### BASIC PERMISSIONS:
+### Basic Permissions:
 
 - **Full Control**: Users can modify, add, move and delete files and directories, as well as their associated properties. In addition, users can change permissions settings for all files and subdirectories.
 - **Modify**: Users can view and modify files and file properties, including deleting and adding files to a directory or file properties to a file.
@@ -101,7 +101,7 @@ $acl | Set-Acl -Path \\shared\test
 - **Read**: Users can view files, file properties and directories.
 - **Write**: Users can write to a file and add files to directories.
 
-### ADVANCED PERMISSIONS:
+### Advanced Permissions:
 
 - **Traverse Folder/Execute File**: Users can navigate through folders to reach other files or folders, even if they have no permissions for these files or folders. Users can also run executable files. The Traverse Folder permission takes effect only when the group or user doesn't have the "Bypass Traverse Checking" right in the Group Policy snap-in.
 
