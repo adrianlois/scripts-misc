@@ -1,13 +1,15 @@
-# Generate token for a new bot with @BotFather
-$BotToken = "XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-# Get ChatID of our Telegram user with @IDBot
-$ChatID = "XXXXXXXXX"
-# Set the path of the binary file to be sent
-$File = "C:\path\file.log"
+<# 
+Generate token for a new bot with @BotFather
+	$BotToken = "XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+Get ChatID of our Telegram user with @IDBot
+	$ChatID = "XXXXXXXXX"
+Set the path of the binary file to be sent
+	$LogFile = "C:\path\file.log"
+#>
 
-function Send-TelegramLocalFile {
+Function Send-TelegramLocalFile {
 	[CmdletBinding()]
-	param (
+	Param (
 		[Parameter(Mandatory = $true)]
 		[ValidateNotNullOrEmpty()]
 		[String]$BotToken,
@@ -18,12 +20,12 @@ function Send-TelegramLocalFile {
 
 		[Parameter(Mandatory = $true)]
 		[ValidateNotNullOrEmpty()]
-		[String]$File
+		[String]$LogFile
 	)
 	# $fileContent = [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes($File))
 	$form = @{
 		chat_id		= $ChatID
-		document	= [System.IO.FileInfo]$File
+		document	= [System.IO.FileInfo]$LogFile
 	}
 	# -f or -format string formatting operator in PowerShell. Represents a placeholder for the value of $BotToken.
 	$uri = 'https://api.telegram.org/bot{0}/sendDocument' -f $BotToken
@@ -37,4 +39,4 @@ function Send-TelegramLocalFile {
 	return $results
 }
 
-Send-TelegramLocalFile -BotToken $BotToken -ChatID $ChatID -File $File
+Send-TelegramLocalFile -BotToken $BotToken -ChatID $ChatID -LogFile $LogFile
