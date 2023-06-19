@@ -38,8 +38,8 @@ seq 0 65535 | xargs -P 50 -I {} bash -c 'echo "" > /dev/tcp/10.0.0.40/{} &>/dev/
 ![Get local IPs proc-net-fib_trie](screenshots/port_scanner_xargs.png)
 
 
-### Unlock busy ports with *fuser*
-Unlock busy ports without knowing the associated process ID.
+### Unlock or kill busy ports with *fuser*
+Unblock or kill busy ports without knowing their associated process ID.
 ```bash
 lsof -i:8081
 fuser -k 8081/tcp
