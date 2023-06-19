@@ -1,4 +1,4 @@
-### Csv-To-Excel
+### Csv To Excel
 
 PowerShell module to import/export Excel spreadsheets, without Excel.
 

@@ -1,4 +1,4 @@
-# LocalUsers-Accounts
+# Local Users Accounts
 #### Sample functions for managing Windows local user accounts
 
 Example files of password encryption, to avoid parameterize a password in plain text in a powershell script.
