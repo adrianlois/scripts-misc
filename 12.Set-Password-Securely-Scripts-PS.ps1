@@ -12,3 +12,4 @@ $passwdFile = "C:\PATH\PasswdFile"
 $user = "user@mail.com"
 $passwd = Get-Content $passwdFile | ConvertTo-SecureString
 $creds = New-Object System.Management.Automation.PSCredential ($user, $passwd)
+$creds
