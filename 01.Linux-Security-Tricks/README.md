@@ -74,3 +74,7 @@ history
 shuf -i 1-50 -n 1
 shuf -i 10-50 -n 4
 ```
+
+### Insert a comment block in Bash Script
+Avoid using multiple hashtags to comment code or text in bash script. Add a comment block in bash script.
+![Insert comment block in bash script](screenshots/insert-comment-block-bash-script.png)
