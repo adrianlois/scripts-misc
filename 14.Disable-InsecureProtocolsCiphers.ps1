@@ -1,7 +1,12 @@
 <#
     .DESCRIPTION
     This PowerShell script will disable insecure SSL/TLS Protocols and Cipher.
+    https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/ba-p/3887947
     https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs
+    https://learn.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-11
+    https://learn.microsoft.com/en-us/powershell/module/tls/?view=windowsserver2022-ps
+    https://learn.microsoft.com/en-us/windows-server/security/tls/manage-tls
+    https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r2.pdf
 #>
 
 # Disable SSL 2.0
