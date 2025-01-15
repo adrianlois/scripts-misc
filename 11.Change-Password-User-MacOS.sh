@@ -2,7 +2,7 @@
 
 unset HISTFILE
 
-USERNAME="adrian"
+USERNAME="USER"
 OLDPASS="Abc123"
 NEWPASS="123Abc"
 
