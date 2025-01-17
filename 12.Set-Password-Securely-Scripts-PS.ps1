@@ -9,7 +9,7 @@
 
 # We set the rest of the variables and with $creds we authenticate in the service we need.
 $passwdFile = "C:\PATH\PasswdFile"
-$user = "user@mail.com"
+$user = "user@email.com"
 $passwd = Get-Content $passwdFile | ConvertTo-SecureString
 $creds = New-Object System.Management.Automation.PSCredential ($user, $passwd)
 $creds
