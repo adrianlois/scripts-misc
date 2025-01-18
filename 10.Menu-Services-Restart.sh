@@ -81,7 +81,7 @@ systemctl stop smbd.service
 ;;
 11) echo Salir...
 exit 1;;
-*) echo "$opc no es una opcion v�lida.";
+*) echo "$opc no es una opcion válida.";
 echo "Presiona una tecla para continuar...";
 read foo;;
 esac
