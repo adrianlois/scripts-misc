@@ -1,0 +1,1 @@
+pwsh.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\PATH\FW-Rules-DetectChanges.ps1"

@@ -1,0 +1,3 @@
+﻿"DisplayName","Enabled","Action","Direction","Profile"
+"Using Wi-Fi Direct Queued Job Manager (outbound)","True","Allow","Outbound","Public"
+"Network detection (UPnP outbound)","False","Allow","Outbound","Public"
