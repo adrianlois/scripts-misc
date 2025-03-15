@@ -41,7 +41,7 @@ Function Invoke-RobocopyMirror {
     }
 
     if ((Test-Path -Path $Source) -and (Test-Path -Path $Destination)) {
-        $LogPath = $LogPath + "Backup_Robocopy_" + (Get-Date -uformat "%d-%m-%Y") + ".log"
+        $LogPath = $LogPath + "Backup_Robocopy_" + (Get-Date -Format "dd-MM-yyyy") + ".log"
         robocopy $SourcePath $RemotePath /MIR /R:3 /W:5 /MT:12 /LOG:$LogPath /V
     }
 }
