@@ -53,7 +53,7 @@ Function Compare-FirewallRules {
         [String]$ChangesRulesPath
     )
 
-    $currentDate = $(Get-Date -Format 'dd/MM/yyyy - HH:mm')
+    $currentDate = $(Get-Date -Format "dd/MM/yyyy - HH:mm:ss")
 
     # Check and delete if a previous change file exists
     if (Test-Path -Path $ChangesRulesPath) {
