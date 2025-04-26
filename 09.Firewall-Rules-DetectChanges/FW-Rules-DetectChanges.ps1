@@ -53,12 +53,18 @@ Function Compare-FirewallRules {
         [String]$ChangesRulesPath
     )
 
-    $currentDate = $(Get-Date -Format "dd/MM/yyyy - HH:mm:ss")
+    $currentDate = $(Get-Date -Format 'dd/MM/yyyy - HH:mm')
 
     # Check and delete if a previous change file exists
     if (Test-Path -Path $ChangesRulesPath) {
         Remove-Item -Path $ChangesRulesPath -Force
     }
+
+    # Check if there is an updated rules file from the last run, rename it as Baseline file and delete the outdated Baseline.    if (Test-Path -Path $CurrentRulesPath) {
+    if (Test-Path -Path $CurrentRulesPath) {
+        Remove-Item -Path $BaselineRulesPath -Force
+		Rename-Item -Path $CurrentRulesPath -NewName $BaselineRulesPath
+	}
 
     # Export current rules for comparison
     Get-NetFirewallRule | Select-Object DisplayName, Enabled, Action, Direction, Profile | `
