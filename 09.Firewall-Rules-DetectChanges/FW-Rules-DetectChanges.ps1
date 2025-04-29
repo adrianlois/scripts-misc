@@ -63,7 +63,7 @@ Function Compare-FirewallRules {
     # Check if there is an updated rules file from the last run, rename it as Baseline file and delete the outdated Baseline.    if (Test-Path -Path $CurrentRulesPath) {
     if (Test-Path -Path $CurrentRulesPath) {
         Remove-Item -Path $BaselineRulesPath -Force
-		Rename-Item -Path $CurrentRulesPath -NewName $BaselineRulesPath
+        Rename-Item -Path $CurrentRulesPath -NewName $BaselineRulesPath
 	}
 
     # Export current rules for comparison
