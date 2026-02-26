@@ -3,7 +3,7 @@
 	Alternatives to prevent computer session lockout every 3 minutes.
 #>
 
-# NoLock: move the mouse pointer by 1 screen pixel (the best option)
+# NoLock (the best option): move the mouse pointer by 1 screen pixel (0x0001 = MOUSEEVENTF_MOVE)
 function NoLock {
     Add-Type @"
 using System;
@@ -16,7 +16,6 @@ public class Mouse {
 "@
     Write-Host "..."
     for (;;) {
-        # 0x0001 = MOUSEEVENTF_MOVE
         [Mouse]::mouse_event(0x0001, 1, 0, 0, 0)
         Start-Sleep -Seconds 180
     }
